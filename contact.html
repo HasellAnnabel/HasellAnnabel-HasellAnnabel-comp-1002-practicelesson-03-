@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li>
+          <a href="./">Home</a>
+        </li>
+
+        <li>
+          <a href="./contact.html">Contact Me</a>
+        </li>
+      </ul>
+    </nav>
+    
+    <h1>Contact Me</h1>
+  </header>
+
+  <main>
+
+    <form action="./thanks.html" method="post" name="lesson-03-contact.me" netlify>
+      
+      <fieldset>
+        <legend>Your Information</legend>
+        <div>
+          <label for="firstName">First name:</label><br>
+          <input type="text" name="firstName" id="firstName" required maxlength="15" minlength="2" placeholder="Hasell"> 
+        </div>
+        <small>REQUIRED!</small>
+
+        <div>
+          <label for="lastName">Last name:</label><br>
+          <input type="text" name="lastName" id="lastName" required maxlength="15" minlength="2" placeholder="Jaramillo"> 
+        </div>
+        <small>REQUIRED!</small>
+      </fieldset>
+
+      <fieldset>
+        <legend>Your Contact Option</legend>
+      </fieldset>
+
+      <div>
+        <label for="email">Email:</label><br>
+        <input type="email" name="email" id="email" required placeholder="haselljaramillo@gmail.com"> 
+      </div>
+      <small>REQUIRED!</small>
+
+      <div>
+        <label for="tel">Phone:</label><br>
+        <input type="tel" name="tel" id="tel" required placeholder="1(705)555-555">
+      </div>
+
+      <fieldset>
+        <legend> Your Inquiry</legend>
+        <div>
+          <label for="inquiryType"><em>How we can help you?</em></label><br>
+          <select name="inquiryType" id="inquiryType" required>
+            <option>Select an Option...</option>
+
+            <option value="Schedule">Opening Hours</option>
+            <option value="business">Bussiness Oportunity</option>
+
+            <option value="general">General Inquiry</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="message">Message:</label><br>
+          <textarea name="" id="" cols="" rows="" required placeholder="Your message here"></textarea>
+        </div>
+        <small>REQUIRED!</small>
+
+      </fieldset>
+
+      <div>
+        <input type="submit" value="Submit Inquiry">
+      </div>
+    </form>
+
+
+  </main>
+
+  <footer>&copy;2022 Hasell Jaramillo</footer>
+</body>
+</html>
